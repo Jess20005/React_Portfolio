@@ -1,6 +1,6 @@
-.card {
-  background-size: cover;
-  background-position: center;
+  /* .card {
+  background-size: cover; 
+  background-position: left;
   background-clip: content-box;
   border: 6px solid white;
   height: 400px;
@@ -9,11 +9,30 @@
   position: relative;
   margin: 0 auto;
   margin-top: 30px;
-}
+}  */
 
-.card .fa-spinner {
+ /* .card .fa-spinner {
   font-size: 180px;
   position: absolute;
   left: 25%;
   top: 25%;
+}   */
+
+
+.box {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.row {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.row > div {
+  flex-basis: calc(50% - 40px);
 }

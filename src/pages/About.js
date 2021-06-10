@@ -9,7 +9,6 @@ function About() {
     <div>
       <Hero backgroundImage="https://img.freepik.com/free-vector/programming-code-coding-hacker-background-programming-code-icon-made-with-binary-code_127544-815.jpg?size=626&ext=jpg">
         <h1>Jessica Gibbs</h1>
-        {/* <h2>They're the Good Boys and Girls</h2> */}
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
