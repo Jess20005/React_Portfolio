@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Card from "../components/Card";
-import Alert from "../components/Alert";
+// import Alert from "../components/Alert";
 
 class Projects extends Component {
   state = {
     image: "",
     match: false,
-    matchCount: 0
+    matchCount: 0,
   };
 
   // When the component mounts, load the next dog to be displayed
@@ -15,7 +15,7 @@ class Projects extends Component {
     this.loadNextDog();
   }
 
-  handleBtnClick = event => {
+  handleBtnClick = (event) => {
     // Get the data-value of the clicked button
     const btnType = event.target.attributes.getNamedItem("data-value").value;
     // Clone this.state to the newState object
@@ -41,28 +41,28 @@ class Projects extends Component {
 
   loadNextDog = () => {
     API.getRandomDog()
-      .then(res =>
+      .then((res) =>
         this.setState({
-          image: res.data.message
+          image: res.data.message,
         })
       )
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   };
 
   render() {
     return (
       <div>
-        <h1 className="text-center">Make New Friends</h1>
-        <h3 className="text-center">
+        <h1 className="text-center">My Projects</h1>
+        {/* <h3 className="text-center">
           Thumbs up on any pups you'd like to meet!
-        </h3>
+        </h3> */}
         <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
-        <h1 className="text-center">
+        {/* <h1 className="text-center">
           Made friends with {this.state.matchCount} pups so far!
         </h1>
         <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
           Yay! That Pup Liked You Too!!!
-        </Alert>
+        </Alert> */}
       </div>
     );
   }
