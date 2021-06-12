@@ -6,18 +6,18 @@ import Col from "../components/Col";
 
 function About() {
   return (
-    <div class="auto">
+    <div className="auto">
       <Hero backgroundImage="https://img.freepik.com/free-vector/programming-code-coding-hacker-background-programming-code-icon-made-with-binary-code_127544-815.jpg?size=626&ext=jpg">
         <h1>Jessica Gibbs</h1>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row size="auto">
-          <Col size="auto">
+          {/* <Col size="auto"> */}
             <h1>Welcome to my page!!</h1>
-          </Col>
+          {/* </Col> */}
         </Row>
         <Row size="auto">
-          <Col size="auto">
+          {/* <Col size="auto"> */}
             <p>
               I appreciate you stopping by for a visit. My name is Jessica Gibbs
               and I currently work for a non-profit agency where are focus is
@@ -34,9 +34,9 @@ function About() {
               take it one day at a time and continue to put my best effort
               forward.
             </p>
-          </Col>
-          <Col size="auto">
-            <img src="/Me.jpg" width="300" height="300" alt="" />
+          {/* </Col> */}
+          <Col size="md-3">
+            <img src="/Me.jpg" width="200" height="200" alt="" />
           </Col>
         </Row>
       </Container>

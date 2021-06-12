@@ -19,26 +19,33 @@ const Cards = () => {
       title: "Daily Tracker",
       text: "Here you will find a simple work day calendar that allows the user to enter events by time block and save them.",
     },
+    {
+      image: "/EmployeeDirectoryScreenshot.png",
+      title: "Employee Directory",
+      text: "This project I created my first employee directory with React.The process required breaking up the application's UI into components, manage component state, and respond to user events.",
+    },
+    {
+      image: "/teamscreenshot.png",
+      title: "Team Profile Generator",
+      text: "This is a quick and efficient way to create a team with engineers, interns. You will have the option of creating one manager role with the first prompt.",
+    },
+    {
+      image: "/TrackerScreenshot.png",
+      title: "Fitness Tracker",
+      text: "Here you will find a simple work day calendar that allows the user to enter events by time block and save them.",
+    },
   ];
 
   const renderCard = (card, index) => {
     return (
-            <Card style={{ width: "10rem"}} key={index} className="box">
-              {/* eslint-disable-next-line  */}
-              <Card.Img variant="top" src="holder.js/100px100" src={card.image} />
-              <Card.Body>
-                <Card.Title>{card.title}</Card.Title>
-                <Card.Text>{card.text}</Card.Text>
-                {/* eslint-disable-next-line  */}
-                <a href="#" className="btn btn-outline-success">
-                  Deployed Site
-                </a>
-                {/* eslint-disable-next-line  */}
-                <a href="#" className="btn btn-outline-success">
-                  GitHub Repo
-                </a>
-              </Card.Body>
-            </Card>
+      <Card style={{ width: "10rem" }} key={index} className="box">
+        {/* eslint-disable-next-line  */}
+        <Card.Img variant="top" src="holder.js/100px100" src={card.image} />
+        <Card.Body>
+          <Card.Title>{card.title}</Card.Title>
+          <Card.Text>{card.text}</Card.Text>
+        </Card.Body>
+      </Card>
     );
   };
 

@@ -7,11 +7,11 @@
 
 .row {
   min-height: 100%;
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .row > div {
-  flex-basis: calc(33% - 40px);
+  flex-basis: calc(32% - 40px);
 }
