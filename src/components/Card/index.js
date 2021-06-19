@@ -33,6 +33,7 @@ const Cards = () => {
       image: "/TrackerScreenshot.png",
       title: "Fitness Tracker",
       text: "Here you will find a simple work day calendar that allows the user to enter events by time block and save them.",
+      link: "www.google.com"
     },
   ];
 
@@ -44,6 +45,7 @@ const Cards = () => {
         <Card.Body>
           <Card.Title>{card.title}</Card.Title>
           <Card.Text>{card.text}</Card.Text>
+          <Card.Link>{card.link}</Card.Link>
         </Card.Body>
       </Card>
     );

@@ -1,3 +1,7 @@
+.container{
+  display:flex;
+}
+
 .box {
   margin: 20px;
   display: flex;
@@ -7,7 +11,7 @@
 
 .row {
   min-height: 100%;
-  display: inline;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }

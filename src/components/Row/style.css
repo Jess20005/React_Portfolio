@@ -1,5 +1,5 @@
 .row {
-  display: grid;
+  display: flex;
   grid-template-columns: auto auto;
   grid-column-gap: 10px;
   padding: 10px;
