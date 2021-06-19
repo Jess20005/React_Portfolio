@@ -2,6 +2,10 @@
   display:flex;
 }
 
+.img{
+align-items: center;
+}
+
 .box {
   margin: 20px;
   display: flex;

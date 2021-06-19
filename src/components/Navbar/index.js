@@ -45,7 +45,6 @@ function Navbar() {
                   : "nav-link"
               }
             >
-              Contact
             </Link>
           </li>
         </ul>
